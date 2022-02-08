@@ -129,7 +129,7 @@ ggdraw()+
   draw_plot(Fig1b_supp, x = .3, y = .5, width = .7, height = .5)+
   draw_plot(Fig1c_supp,  x = 0, y = 0, width = 1, height = 0.5)+
   draw_plot_label(label = c("a", "b", "c"), size = 13,
-                  x = c(0, 0.3, 0), y = c(1, 1, 0.5))
+                  x = c(0, 0.29, 0), y = c(1, 1, 0.5))
 
 dev.off()
 
@@ -147,7 +147,7 @@ tab_nopseudoreplicates <-
   filter(
     !Reference_ == "Dornelas et al. 2014",
     !Reference_ == "La Sorte 2006",
-    !Reference_ == "Jarzyna and Jetz 2017",
+    !(Reference_ == "Jarzyna and Jetz 2017" & (Metric == "sR" | Metric == "fDiv")),
     !(Reference_ == "La Sorte and Boecklen 2005" & Metric == "sR"),
     !(Reference_ == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
     !(Reference_ == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
@@ -226,7 +226,7 @@ ggdraw()+
   draw_plot(Fig3b, x = .3, y = .5, width = .7, height = .5)+
   draw_plot(Fig3c,  x = 0, y = 0, width = 1, height = 0.5)+
   draw_plot_label(label = c("a", "b", "c"), size = 13,
-                  x = c(0, 0.3, 0), y = c(1, 1, 0.5))
+                  x = c(0, 0.29, 0), y = c(1, 1, 0.5))
 
 dev.off()
 

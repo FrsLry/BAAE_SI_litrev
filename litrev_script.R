@@ -37,32 +37,6 @@ table1 <-
   group_by(Reference) %>%
   collapse_rows_df(Reference)
 
-## Create figure 2a #########
-jpeg("figures/Fig2a.jpg",
-     units = "in",
-     res = 1000,
-     # paper = "a4r",
-     width = 11,
-     height = 8.27)
-
-tab %>%
-  select(Reference_, `Temporal extent (year)`, `Temporal coverage`) %>%
-  separate(`Temporal coverage`, c("start", "end"), "-") %>%
-  mutate_at(vars("start", "end"), as.numeric) %>%
-  filter(!duplicated(Reference_)) %>%
-  mutate(coverage = (end-start)+1) %>%
-  mutate(Reference_ = fct_reorder(Reference_, coverage)) %>%
-  ggplot(aes(y = Reference_, yend = Reference_, x = start, xend = end))+
-  geom_segment(size = 2)+
-  theme_bw()+
-  # theme_classic()+
-  ylab("")+
-  xlab("")+
-  theme(axis.title = element_blank(),
-        axis.text = element_text(size = 15) )
-
-dev.off()
-
 ## Create supplementary Figure 1, not accounting for pseudo replicates #################
 Fig1a_supp <-
   table(tab$`Spatial grain (Km²)`, tab$Trend) %>%
@@ -74,12 +48,14 @@ Fig1a_supp <-
   ggplot(aes(fill = Trend, x = `Spatial grain size`, y = Frequency))+
   geom_bar(position = "stack", stat = "identity")+
   ylab("Number of trends")+
+  ggtitle("Spatial grain")+
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank())+
   scale_fill_viridis_d(option = "turbo",
                        begin = .8, end = .5, direction = -1)+
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = .5))
 
 Fig1b_supp <-
   table(tab %>% select(Metric, Trend)) %>%
@@ -88,13 +64,15 @@ Fig1b_supp <-
   ggplot(aes(fill = Trend, y = `Frequency`, x = Metric))+
   geom_bar(position = "stack", stat = "identity")+
   ylab("Number of trends")+
+  ggtitle("Metric")+
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank(),
         axis.title.y = element_blank())+
   scale_fill_viridis_d(option = "turbo",
                        begin = .8, end = .5, direction = -1)+
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = .5))
 
 Fig1c_supp <-
   table(tab %>% select(Metric, Trend, `Spatial grain (Km²)`)) %>%
@@ -130,6 +108,33 @@ ggdraw()+
   draw_plot(Fig1c_supp,  x = 0, y = 0, width = 1, height = 0.5)+
   draw_plot_label(label = c("a", "b", "c"), size = 13,
                   x = c(0, 0.29, 0), y = c(1, 1, 0.5))
+
+dev.off()
+
+###############################################
+# Create Fig2a with the temporal extent of the articles
+jpeg("data/Fig2a.jpg",
+     units = "in",
+     res = 1000,
+     # paper = "a4r",
+     width = 11,
+     height = 8.27)
+
+tab %>%
+  select(Reference_, `Temporal extent (year)`, `Temporal coverage`) %>%
+  separate(`Temporal coverage`, c("start", "end"), "-") %>%
+  mutate_at(vars("start", "end"), as.numeric) %>%
+  filter(!duplicated(Reference_)) %>%
+  mutate(coverage = (end-start)+1) %>%
+  mutate(Reference_ = fct_reorder(Reference_, coverage)) %>%
+  ggplot(aes(y = Reference_, yend = Reference_, x = start, xend = end))+
+  geom_segment(size = 2)+
+  theme_bw()+
+  # theme_classic()+
+  ylab("")+
+  xlab("")+
+  theme(axis.title = element_blank(),
+        axis.text = element_text(size = 15) )
 
 dev.off()
 
@@ -170,27 +175,31 @@ Fig3a <-
   ggplot(aes(fill = Trend, x = `Spatial grain size`, y = Frequency))+
   geom_bar(position = "stack", stat = "identity")+
   ylab("Number of trends")+
+  ggtitle("Spatial grain")+
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank())+
   scale_fill_viridis_d(option = "turbo",
                        begin = .8, end = .5, direction = -1)+
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = .5))
 
 Fig3b <-
-  table(tab %>% select(Metric, Trend)) %>%
+  table(tab_nopseudoreplicates %>% select(Metric, Trend)) %>%
   as.data.frame() %>%
   rename("Frequency" = Freq) %>%
   ggplot(aes(fill = Trend, y = `Frequency`, x = Metric))+
   geom_bar(position = "stack", stat = "identity")+
   ylab("Number of trends")+
+  ggtitle("Metric")+
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank(),
         axis.title.y = element_blank())+
   scale_fill_viridis_d(option = "turbo",
                        begin = .8, end = .5, direction = -1)+
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = .5))
 
 
 Fig3c <-

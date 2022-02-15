@@ -5,12 +5,41 @@ library(readxl)
 library(ggplot2)
 library(forcats)
 library(cowplot)
-## Load the table
-tab <-
-  read_excel("data/literature.xlsx") %>%
-  ## Order the trend levels
-  mutate(Trend = factor(Trend, levels = c("Increase", "Stable", "Decrease")))
 
+###################################
+## Load the table
+load('data/tab.Rdata')
+
+## Modify the table: discretize the spatial grains and rename the metrics
+tab <-
+  tab %>%
+  mutate(`Spatial grain (Km²)` = case_when(
+    `Spatial grain (Km²)` <= 2500 | `Spatial grain (Km²)` == "Local" ~ "Local",
+    (`Spatial grain (Km²)` > 2500 & `Spatial grain (Km²)` < 800000) | (`Spatial grain (Km²)`== "Admin. unit") | (`Spatial grain (Km²)`== "Regional") ~ "Regional",
+    (`Spatial grain (Km²)` == "National") | (`Spatial grain (Km²)`== "National unit") | (`Spatial grain (Km²)`== "Europe") ~ "National",
+    TRUE ~ "Global")) %>%
+  mutate(`Spatial extent (Km²)` = unlist(tab$`Spatial extent (Km²)`),
+         `Temporal lag (year)`= as.numeric(unlist(tab$`Temporal lag (year)`)),
+         `Temporal extent (year)` = as.numeric(unlist(tab$`Temporal extent (year)`)),
+         Trend = factor(Trend, levels = c("Increase", "Stable", "Decrease"))) %>%
+  mutate(Metric = case_when(
+    Metric == "SR" ~ "sR",
+    Metric == "Functional richness" ~ "fR",
+    Metric == "Evenness" ~ "Eve",
+    Metric == "Functional evenness" ~ "fEve",
+    Metric == "Diversity" ~ "Div",
+    Metric == "Functional diversity" ~ "fDiv",
+    Metric == "Temporal beta-diversity" ~ "tBetaDiv",
+    Metric == "Spatial beta-diversity" ~ "sBetaDiv",
+    Metric == "Functional spatial beta-diversity" ~ "fsBetaDiv",
+    Metric == "Gamma-diversity" ~ "gammaDiv",
+    Metric == "Functional Gamma-diversity" ~ "fgammaDiv",
+    Metric == "Phylogenetic diversity" ~ "pDiv"
+  )) %>%
+  select(-Note) %>%
+  unique()
+
+###################################
 ## Create the Table 1 ################
 
 # Function to collapse the reference column
@@ -32,11 +61,11 @@ table1 <-
          `Temporal lag (year)` = as.numeric(`Temporal lag (year)`),
          `Spatial extent (Km²)` = as.numeric(`Spatial extent (Km²)`),
          `Temporal extent (year)` = as.numeric(`Temporal extent (year)`)) %>%
-  select(-Reference_) %>%
   as_tibble() %>%
   group_by(Reference) %>%
   collapse_rows_df(Reference)
 
+###################################
 ## Create supplementary Figure 1, not accounting for pseudo replicates #################
 Fig1a_supp <-
   table(tab$`Spatial grain (Km²)`, tab$Trend) %>%
@@ -113,7 +142,7 @@ dev.off()
 
 ###############################################
 # Create Fig2a with the temporal extent of the articles
-jpeg("data/Fig2a.jpg",
+jpeg("figures/Fig2a.jpg",
      units = "in",
      res = 1000,
      # paper = "a4r",
@@ -121,16 +150,15 @@ jpeg("data/Fig2a.jpg",
      height = 8.27)
 
 tab %>%
-  select(Reference_, `Temporal extent (year)`, `Temporal coverage`) %>%
+  select(Reference, `Temporal extent (year)`, `Temporal coverage`) %>%
   separate(`Temporal coverage`, c("start", "end"), "-") %>%
   mutate_at(vars("start", "end"), as.numeric) %>%
-  filter(!duplicated(Reference_)) %>%
+  filter(!duplicated(Reference)) %>%
   mutate(coverage = (end-start)+1) %>%
-  mutate(Reference_ = fct_reorder(Reference_, coverage)) %>%
-  ggplot(aes(y = Reference_, yend = Reference_, x = start, xend = end))+
+  mutate(Reference = fct_reorder(Reference, coverage)) %>%
+  ggplot(aes(y = Reference, yend = Reference, x = start, xend = end))+
   geom_segment(size = 2)+
   theme_bw()+
-  # theme_classic()+
   ylab("")+
   xlab("")+
   theme(axis.title = element_blank(),
@@ -150,17 +178,17 @@ tab_nopseudoreplicates <-
   tab %>%
   ## Papers to take off:
   filter(
-    !Reference_ == "Dornelas et al. 2014",
-    !Reference_ == "La Sorte 2006",
-    !(Reference_ == "Jarzyna and Jetz 2017" & (Metric == "sR" | Metric == "fDiv")),
-    !(Reference_ == "La Sorte and Boecklen 2005" & Metric == "sR"),
-    !(Reference_ == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference_ == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
-    !(Reference_ == "Jarzyna and Jetz 2018" & Metric == "tBetaDiv" & `Spatial grain (Km²)` == "Local"),
-    !(Reference_ == "Schipper et al. 2016" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference_ == "Barnagaud et al. 2017" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference_ == "Chase et al. 2019" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference_ == "McGill et al. 2015" & `Spatial grain (Km²)` == "Local")
+    !Reference == "Dornelas et al. 2014",
+    !Reference == "La Sorte 2006",
+    !(Reference == "Jarzyna and Jetz 2017" & (Metric == "sR" | Metric == "fDiv")),
+    !(Reference == "La Sorte and Boecklen 2005" & Metric == "sR"),
+    !(Reference == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
+    !(Reference == "Jarzyna and Jetz 2018" & Metric == "tBetaDiv" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Schipper et al. 2016" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Barnagaud et al. 2017" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Chase et al. 2019" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "McGill et al. 2015" & `Spatial grain (Km²)` == "Local")
   )
 
 ## Create the bar plot without pseudoreplications
@@ -239,13 +267,26 @@ ggdraw()+
 
 dev.off()
 
-
-### Create the table with the notes
-
-tab_notes <- read_excel("data/notes.xlsx")
+###################################
+### Create the table with the notes ##################
+load("data/notes.Rdata")
 
 tab_sup <-
-tab_notes %>%
+  tab_notes %>%
+  mutate(Metric = case_when(
+    Metric == "SR" ~ "sR",
+    Metric == "Functional richness" ~ "fR",
+    Metric == "Evenness" ~ "Eve",
+    Metric == "Functional evenness" ~ "fEve",
+    Metric == "Diversity" ~ "Div",
+    Metric == "Functional diversity" ~ "fDiv",
+    Metric == "Temporal beta-diversity" ~ "tBetaDiv",
+    Metric == "Spatial beta-diversity" ~ "sBetaDiv",
+    Metric == "Functional spatial beta-diversity" ~ "fsBetaDiv",
+    Metric == "Gamma-diversity" ~ "gammaDiv",
+    Metric == "Functional Gamma-diversity" ~ "fgammaDiv"
+  )) %>%
+  distinct(across(!contains("Note")), .keep_all = TRUE) %>%
   dplyr::mutate(`Temporal grain (hour)` = as.numeric(`Temporal grain (hour)`),
                 `Temporal lag (year)` = as.numeric(`Temporal lag (year)`),
                 `Spatial extent (Km²)` = as.numeric(`Spatial extent (Km²)`),

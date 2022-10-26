@@ -437,8 +437,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.63903496"
-     inkscape:cx="741.74345"
-     inkscape:cy="366.17715"
+     inkscape:cx="807.46756"
+     inkscape:cy="475.71732"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="-11"
@@ -451,7 +451,7 @@
        id="page8"
        width="1682"
        height="750.55499"
-       inkscape:export-filename="Fig1.jpg"
+       inkscape:export-filename="Fig1.pdf"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </sodipodi:namedview>
@@ -571,6 +571,35 @@
          y="-6.8574319"
          sodipodi:role="line"
          id="tspan9577"
+         style="text-align:center;text-anchor:middle;stroke-width:0.668755" /></text>
+    <text
+       xml:space="preserve"
+       transform="scale(1,-1)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.7126px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.668755"
+       id="text64-9"
+       x="272.44003"
+       y="-97.554344"><tspan
+         sodipodi:role="line"
+         id="tspan62-8"
+         style="text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.668755"
+         x="272.44003"
+         y="-97.554344">One-time </tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.668755"
+         x="272.44003"
+         y="-79.163597"
+         id="tspan2535">sample</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.668755"
+         x="272.44003"
+         y="-60.772846"
+         id="tspan10313-6"><tspan
+           id="tspan10311-4"
+           style="text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.668755" /></tspan><tspan
+         x="204.76613 212.01945 220.39093 227.42355 232.29343 235.73618 242.82765 246.29984 249.41888 257.55496 262.29242 269.38391 272.82666 280.99219 284.11124 292.87994 295.99902 301.82523 308.91669 321.18701 329.5585 333.03064"
+         y="-97.554344"
+         sodipodi:role="line"
+         id="tspan9577-3"
          style="text-align:center;text-anchor:middle;stroke-width:0.668755" /></text>
     <text
        xml:space="preserve"
@@ -1660,34 +1689,34 @@
        transform="translate(-28.794602,-49.536557)"><tspan
          x="1521.1928"
          y="149.60346"
-         id="tspan57146"><tspan
+         id="tspan5619"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57144">Level of the </tspan></tspan><tspan
+           id="tspan5617">Level of the </tspan></tspan><tspan
          x="1542.004"
          y="186.60964"
-         id="tspan57150"><tspan
+         id="tspan5623"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57148">analysis/</tspan></tspan><tspan
+           id="tspan5621">analysis/</tspan></tspan><tspan
          x="1533.0593"
          y="223.61582"
-         id="tspan57154"><tspan
+         id="tspan5627"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57152">inference/</tspan></tspan><tspan
+           id="tspan5625">inference/</tspan></tspan><tspan
          x="1512.8998"
          y="260.62199"
-         id="tspan57158"><tspan
+         id="tspan5631"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57156">aggregation/</tspan></tspan><tspan
+           id="tspan5629">aggregation/</tspan></tspan><tspan
          x="1533.0164"
          y="297.62817"
-         id="tspan57162"><tspan
+         id="tspan5635"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57160">summing/</tspan></tspan><tspan
+           id="tspan5633">summing/</tspan></tspan><tspan
          x="1535.2006"
          y="334.63437"
-         id="tspan57166"><tspan
+         id="tspan5639"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57164">averaging
+           id="tspan5637">averaging
 </tspan></tspan></text>
     <text
        xml:space="preserve"
@@ -1696,20 +1725,20 @@
        transform="translate(-21.91904,363.18502)"><tspan
          x="1506.1137"
          y="149.60346"
-         id="tspan57170"><tspan
+         id="tspan5643"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57168">Level of the </tspan></tspan><tspan
+           id="tspan5641">Level of the </tspan></tspan><tspan
          x="1519.5128"
          y="186.60964"
-         id="tspan57174"><tspan
+         id="tspan5647"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57172">sampling/
+           id="tspan5645">sampling/
 </tspan></tspan><tspan
          x="1493.7029"
          y="223.61582"
-         id="tspan57178"><tspan
+         id="tspan5651"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan57176">study design 
+           id="tspan5649">study design 
 </tspan></tspan></text>
     <g
        id="g32-99"
@@ -1881,5 +1910,9 @@
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#231f20;stroke-width:0.344641;stroke-dasharray:none;stroke-opacity:1"
        d="m 1088.1557,622.62368 v 8.43724"
        id="path47189-0-7-7-8" />
+    <path
+       style="fill:#00aeef;stroke:#231f20;stroke-width:1.755;marker-start:url(#Arrow5);stroke-dasharray:none"
+       d="M 474.42622,491.36592 H 407.64593"
+       id="path562" />
   </g>
 </svg>

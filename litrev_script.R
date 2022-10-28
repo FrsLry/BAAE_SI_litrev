@@ -33,8 +33,8 @@ tab <-
     Metric == "Temporal beta-diversity" ~ "tBetaDiv",
     Metric == "Spatial beta-diversity" ~ "sBetaDiv",
     Metric == "Functional spatial beta-diversity" ~ "fsBetaDiv",
-    Metric == "Gamma-diversity" ~ "gammaDiv",
-    Metric == "Functional Gamma-diversity" ~ "fgammaDiv",
+    Metric == "Gamma-diversity" ~ "GammaDiv",
+    Metric == "Functional Gamma-diversity" ~ "fGammaDiv",
     Metric == "Phylogenetic diversity" ~ "pDiv"
   )) %>%
   select(-Note) %>%
@@ -279,8 +279,8 @@ tab_sup <-
     Metric == "Temporal beta-diversity" ~ "tBetaDiv",
     Metric == "Spatial beta-diversity" ~ "sBetaDiv",
     Metric == "Functional spatial beta-diversity" ~ "fsBetaDiv",
-    Metric == "Gamma-diversity" ~ "gammaDiv",
-    Metric == "Functional Gamma-diversity" ~ "fgammaDiv"
+    Metric == "Gamma-diversity" ~ "GammaDiv",
+    Metric == "Functional Gamma-diversity" ~ "fGammaDiv"
   )) %>%
   distinct(across(!contains("Note")), .keep_all = TRUE) %>%
   dplyr::mutate(`Temporal grain (hour)` = as.numeric(`Temporal grain (hour)`),
@@ -291,3 +291,23 @@ tab_sup <-
   as_tibble() %>%
   group_by(Reference) %>%
   collapse_rows_df(Reference)
+
+#### Supplementary Figure 2 ###########
+jpeg("figures/supp_Fig2.jpg",
+     units = "in",
+     res = 1000,
+     # paper = "a4r",
+     width = 4.47,
+     height = 3.46)
+
+tab %>%
+  separate(`Temporal coverage`, c("start", "end"), "-") %>%
+  mutate(Trend = factor(Trend, levels = c("Decrease", "Stable", "Increase"), ordered = T)) %>%
+  mutate_at(vars("start", "end"), as.numeric) %>%
+  ggplot()+
+  geom_point(aes(start, Trend))+
+  xlab("Year")+
+  theme_bw()
+
+dev.off()
+

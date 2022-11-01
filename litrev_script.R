@@ -178,17 +178,17 @@ tab_nopseudoreplicates <-
   tab %>%
   ## Papers to take off:
   filter(
-    !Reference == "Dornelas et al. 2014",
-    !Reference == "La Sorte 2006",
-    !(Reference == "Jarzyna and Jetz 2017" & (Metric == "sR" | Metric == "fDiv")),
-    !(Reference == "La Sorte and Boecklen 2005" & Metric == "sR"),
-    !(Reference == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference == "Jarzyna and Jetz 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
-    !(Reference == "Jarzyna and Jetz 2018" & Metric == "tBetaDiv" & `Spatial grain (Km²)` == "Local"),
-    !(Reference == "Schipper et al. 2016" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference == "Barnagaud et al. 2017" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference == "Chase et al. 2019" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
-    !(Reference == "McGill et al. 2015" & `Spatial grain (Km²)` == "Local")
+    !Reference == "Dornelas et al., 2014",
+    !Reference == "La Sorte, 2006",
+    !(Reference == "Jarzyna and Jetz, 2017" & (Metric == "sR" | Metric == "fDiv")),
+    !(Reference == "La Sorte and Boecklen, 2005" & Metric == "sR"),
+    !(Reference == "Jarzyna and Jetz, 2018" & Metric == "sR" & `Spatial extent (Km²)` == "Local"),
+    !(Reference == "Jarzyna and Jetz, 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
+    !(Reference == "Jarzyna and Jetz, 2018" & Metric == "tBetaDiv" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Schipper et al., 2016" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Barnagaud et al., 2017" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "Chase et al., 2019" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
+    !(Reference == "McGill et al., 2015" & `Spatial grain (Km²)` == "Local")
   )
 
 ## Create the bar plot without pseudoreplications

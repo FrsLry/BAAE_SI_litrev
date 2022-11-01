@@ -68,6 +68,7 @@ table1 <-
 
 ###################################
 ## Create supplementary Figure 1, not accounting for pseudo replicates #################
+palette <- c("#74ADD1", "#FDAE61", "#D73027")
 
 Fig1a_supp <-
   table(tab$`Spatial grain (Km²)`, tab$Trend) %>%
@@ -83,7 +84,7 @@ Fig1a_supp <-
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank())+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)+
+  scale_fill_manual(values = palette)+
   theme(legend.position = "none",
         plot.title = element_text(hjust = .5))
 
@@ -99,7 +100,7 @@ Fig1b_supp <-
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank(),
         axis.title.y = element_blank())+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)+
+  scale_fill_manual(values = palette)+
   theme(legend.position = "none",
         plot.title = element_text(hjust = .5))
 
@@ -120,7 +121,7 @@ Fig1c_supp <-
         strip.background = element_blank(),
         strip.text.x = element_text(face = "bold", color = "black", size = 10))+
   labs(fill = "Trend reported")+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)
+  scale_fill_manual(values = palette)
 
 ## Save the plot
 jpeg("figures/supp_Fig1.jpg",
@@ -206,7 +207,7 @@ Fig3a <-
   theme_light()+
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank())+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)+
+  scale_fill_manual(values = palette)+
   theme(legend.position = "none",
         plot.title = element_text(hjust = .5))
 
@@ -222,7 +223,7 @@ Fig3b <-
   theme(axis.text.x = element_text(angle = 45, hjust=1),
         axis.title.x=element_blank(),
         axis.title.y = element_blank())+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)+
+  scale_fill_manual(values = palette)+
   theme(legend.position = "none",
         plot.title = element_text(hjust = .5))
 
@@ -245,7 +246,7 @@ Fig3c <-
         strip.background = element_blank(),
         strip.text.x = element_text(face = "bold", color = "black", size = 10))+
   labs(fill = "Trend reported")+
-  scale_fill_brewer(palette = "RdYlBu", direction = -1)
+  scale_fill_manual(values = palette)
 
 jpeg("figures/Fig3.jpg",
      units = "in",

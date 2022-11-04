@@ -135,7 +135,7 @@ ggdraw()+
   draw_plot(Fig1a_supp, x = 0, y = .5, width = .3, height = .5)+
   draw_plot(Fig1b_supp, x = .3, y = .5, width = .7, height = .5)+
   draw_plot(Fig1c_supp,  x = 0, y = 0, width = 1, height = 0.5)+
-  draw_plot_label(label = c("a", "b", "c"), size = 13,
+  draw_plot_label(label = c("(A)", "(B)", "(C)"), size = 13,
                   x = c(0, 0.29, 0), y = c(1, 1, 0.5))
 
 dev.off()
@@ -160,9 +160,10 @@ tab %>%
   geom_segment(size = 2)+
   theme_bw()+
   ylab("")+
-  xlab("")+
-  theme(axis.title = element_blank(),
-        axis.text = element_text(size = 15) )
+  xlab("Year")+
+  theme(axis.title.y = element_blank(),
+        axis.title.x = element_text(size = 15),
+        axis.text = element_text(size = 15))
 
 dev.off()
 
@@ -259,7 +260,7 @@ ggdraw()+
   draw_plot(Fig3a, x = 0, y = .5, width = .3, height = .5)+
   draw_plot(Fig3b, x = .3, y = .5, width = .7, height = .5)+
   draw_plot(Fig3c,  x = 0, y = 0, width = 1, height = 0.5)+
-  draw_plot_label(label = c("a", "b", "c"), size = 13,
+  draw_plot_label(label = c("(A)", "(B)", "(C)"), size = 13,
                   x = c(0, 0.29, 0), y = c(1, 1, 0.5))
 
 dev.off()

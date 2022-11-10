@@ -466,8 +466,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.45186595"
-     inkscape:cx="697.1094"
-     inkscape:cy="801.12255"
+     inkscape:cx="971.52707"
+     inkscape:cy="442.60914"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="-11"
@@ -583,13 +583,13 @@
        xml:space="preserve"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#00adef;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
        id="text414"
-       x="1361.0668"
-       y="153.37743"><tspan
+       x="1375.8108"
+       y="147.69118"><tspan
          sodipodi:role="line"
          id="tspan412"
          style="stroke-width:1.33333"
-         x="1361.0668"
-         y="153.37743">Temporal lag</tspan></text>
+         x="1375.8108"
+         y="147.69118">Temporal lag</tspan></text>
     <g
        id="g416"
        transform="matrix(1.4942313,0,0,-1.3264634,1356.2117,298.6763)">
@@ -618,13 +618,13 @@
        xml:space="preserve"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
        id="text462-9"
-       x="318.77899"
-       y="36.818451"><tspan
+       x="309.38983"
+       y="28.610023"><tspan
          sodipodi:role="line"
          id="tspan460-9"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';stroke-width:1.33333"
-         x="318.77899"
-         y="36.818451">(A)</tspan></text>
+         x="309.38983"
+         y="28.610023">(A)</tspan></text>
     <g
        id="g464"
        transform="matrix(0.46916555,0,0,-1.3333333,1369.0521,454.27326)" />
@@ -916,24 +916,24 @@
        xml:space="preserve"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
        id="text462-9-5"
-       x="318.99899"
-       y="471.79791"><tspan
+       x="309.60986"
+       y="467.37183"><tspan
          sodipodi:role="line"
          id="tspan460-9-9"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';stroke-width:1.33333"
-         x="318.99899"
-         y="471.79791">(B)</tspan></text>
+         x="309.60986"
+         y="467.37183">(B)</tspan></text>
     <text
        xml:space="preserve"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
        id="text462-9-5-7"
-       x="1034.4536"
-       y="33.577522"><tspan
+       x="1036.8269"
+       y="28.610023"><tspan
          sodipodi:role="line"
          id="tspan460-9-9-0"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Bold';stroke-width:1.33333"
-         x="1034.4536"
-         y="33.577522">(C)</tspan></text>
+         x="1036.8269"
+         y="28.610023">(C)</tspan></text>
     <text
        xml:space="preserve"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
@@ -952,11 +952,11 @@
        transform="translate(314.25248,17.704366)" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#00aeef;stroke-width:2.022;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow5-4);marker-end:url(#Arrow5-4)"
-       d="m 1406.5034,169.43516 h 94.3949"
+       d="m 1407.0004,162.65348 h 94.3949"
        id="path44858-0" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#00aeef;stroke-width:1.8334;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1508.0439,162.78041 v 13.34133"
+       d="m 1508.5409,155.99873 v 13.34133"
        id="path47189-0-7" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#231f20;stroke-width:1.91451;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow5-4-4);marker-end:url(#Arrow5-4-4)"
@@ -971,23 +971,23 @@
        d="m 487.01034,618.06711 v 8.43724"
        id="path47189-0-7-7" />
     <path
-       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.61401;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7)"
-       d="M 581.54562,56.730197 H 367.12774"
+       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7)"
+       d="M 581.54562,46.13234 H 367.12774"
        id="path9277-1" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#39b54a;stroke-width:2.01;stroke-dasharray:none;stroke-opacity:1"
-       d="M 356.79672,47.683116 V 67.62039"
+       d="M 356.79672,37.085259 V 57.022533"
        id="path47024-0" />
     <path
-       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.44202;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9)"
-       d="M 802.20114,56.451116 H 989.33106"
+       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9)"
+       d="M 802.20114,47.053896 H 989.33106"
        id="path9277-1-1" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#39b54a;stroke-width:1.73153;stroke-dasharray:none;stroke-opacity:1"
-       d="M 998.43964,65.498197 V 45.560923"
+       d="M 998.43964,56.100977 V 36.163703"
        id="path47024-0-2" />
     <path
-       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.37248;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9-2)"
+       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9-2)"
        d="m 1509.7625,76.368528 h 176.6246"
        id="path9277-1-1-4" />
     <path
@@ -995,7 +995,7 @@
        d="M 1694.9844,85.415609 V 65.478335"
        id="path47024-0-2-9" />
     <path
-       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.49947;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9-2-1)"
+       style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#39b54a;stroke-width:2.499;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-7-9-2-1)"
        d="M 1261.04,78.951515 H 1065.0019"
        id="path9277-1-1-4-8" />
     <path
@@ -1004,7 +1004,7 @@
        id="path47024-0-2-9-4" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#00aeef;stroke-width:1.8334;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1399.1819,162.83075 v 13.34133"
+       d="M 1399.6789,156.04907 V 169.3904"
        id="path47189-0-7-5" />
     <path
        style="fill:#00aeef;stroke:#231f20;stroke-width:1.755;stroke-dasharray:none;marker-start:url(#Arrow5)"
@@ -1027,29 +1027,29 @@
        transform="translate(-1473.345,-25.441366)"><tspan
          x="1536.8957"
          y="149.2639"
-         id="tspan19501"><tspan
+         id="tspan3798"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19499">Level of the </tspan></tspan><tspan
+           id="tspan3796">Level of the </tspan></tspan><tspan
          x="1554.9356"
          y="186.68598"
-         id="tspan19505"><tspan
+         id="tspan3802"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19503">analysis/</tspan></tspan><tspan
+           id="tspan3800">analysis/</tspan></tspan><tspan
          x="1545.5637"
          y="224.10807"
-         id="tspan19509"><tspan
+         id="tspan3806"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19507">inference/</tspan></tspan><tspan
+           id="tspan3804">inference/</tspan></tspan><tspan
          x="1527.4797"
          y="261.53016"
-         id="tspan19513"><tspan
+         id="tspan3810"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19511">aggregation/</tspan></tspan><tspan
+           id="tspan3808">aggregation/</tspan></tspan><tspan
          x="1573.6503"
          y="298.95225"
-         id="tspan19517"><tspan
+         id="tspan3814"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19515">study
+           id="tspan3812">study
 </tspan></tspan></text>
     <text
        xml:space="preserve"
@@ -1058,20 +1058,20 @@
        transform="translate(-1463.8961,463.43107)"><tspan
          x="1521.8166"
          y="149.2639"
-         id="tspan19521"><tspan
+         id="tspan3818"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19519">Level of the </tspan></tspan><tspan
+           id="tspan3816">Level of the </tspan></tspan><tspan
          x="1530.7779"
          y="186.68598"
-         id="tspan19525"><tspan
+         id="tspan3822"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19523">sampling/
+           id="tspan3820">sampling/
 </tspan></tspan><tspan
          x="1511.2419"
          y="224.10807"
-         id="tspan19529"><tspan
+         id="tspan3826"><tspan
            style="font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro';fill:#000000;stroke:none"
-           id="tspan19527">study design 
+           id="tspan3824">study design 
 </tspan></tspan></text>
     <path
        style="fill:#231f20;fill-opacity:1;stroke:#231f20;stroke-width:5.66191;stroke-dasharray:none;marker-end:url(#Arrow5-60)"
@@ -1227,26 +1227,26 @@
     <text
        xml:space="preserve"
        transform="scale(1,-1)"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5345px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#bf1e2d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.751566"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#bf1e2d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.751566"
        id="text64-5"
-       x="611.0694"
-       y="-363.34869"><tspan
+       x="607.29352"
+       y="-358.1442"><tspan
          sodipodi:role="line"
          id="tspan62-2"
-         x="611.0694"
-         y="-363.34869"
-         style="stroke-width:0.751566">Spatial grain</tspan></text>
+         x="607.29352"
+         y="-358.1442"
+         style="font-size:18px;stroke-width:0.751566">Spatial grain</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(1,-1)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#bf1e2d;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="text64-5-1"
-       x="975.25641"
-       y="-195.32977"><tspan
+       x="982.76697"
+       y="-190.18671"><tspan
          sodipodi:role="line"
          id="tspan62-2-6"
-         x="975.25641"
-         y="-195.32977">Temporal grain</tspan></text>
+         x="982.76697"
+         y="-190.18671">Temporal grain</tspan></text>
     <g
        id="g82"
        transform="translate(444.42665,213.14558)">
@@ -1260,12 +1260,12 @@
        transform="scale(1,-1)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#00aeef;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="text92"
-       x="460.43823"
-       y="-275.38989"><tspan
+       x="470.34589"
+       y="-277.83252"><tspan
          sodipodi:role="line"
          id="tspan90"
-         x="460.43823"
-         y="-275.38989"
+         x="470.34589"
+         y="-277.83252"
          dx="-0.57999998">Spatial lag</tspan></text>
     <text
        xml:space="preserve"
@@ -1385,15 +1385,15 @@
        id="path47189-0" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#bf1b2c;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow5-2);marker-end:url(#Arrow5-2)"
-       d="m 1023.6749,218.32487 h 54.257"
+       d="m 1023.9044,213.31059 h 54.257"
        id="path44858-5" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#bf1b2c;stroke-width:1.35;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1017.1469,221.33323 V 215.0053"
+       d="m 1017.3764,216.31895 v -6.32793"
        id="path47189-34" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#bf1b2c;stroke-width:1.35;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1084.4737,221.54504 v -6.32793"
+       d="m 1084.7032,216.53076 v -6.32793"
        id="path47189-0-4" />
     <path
        style="display:inline;fill:#00aeef;fill-opacity:1;stroke:#00aeef;stroke-width:1.35;stroke-dasharray:none;stroke-opacity:1"
@@ -1402,15 +1402,15 @@
     <text
        xml:space="preserve"
        transform="scale(1,-1)"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5345px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#bf1e2d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.751566"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;display:inline;fill:#bf1e2d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.751566"
        id="text64-5-3"
-       x="612.1449"
-       y="-57.568512"><tspan
+       x="607.94397"
+       y="-52.265026"><tspan
          sodipodi:role="line"
          id="tspan62-2-1"
-         x="612.1449"
-         y="-57.568512"
-         style="stroke-width:0.751566">Spatial extent</tspan></text>
+         x="607.94397"
+         y="-52.265026"
+         style="font-size:18px;stroke-width:0.751566">Spatial extent</tspan></text>
     <path
        style="display:inline;fill:#bf1e2d;fill-opacity:1;stroke:#bf1e2d;stroke-width:1.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow5-28)"
        d="M 605.09629,56.873026 H 593.63712"

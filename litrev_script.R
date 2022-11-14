@@ -150,6 +150,7 @@ jpeg("figures/Fig2a.jpg",
      height = 8.27)
 
 tab %>%
+  mutate(Reference =stringr::str_replace(Reference, "and", "&")) %>%
   select(Reference, `Temporal extent (year)`, `Temporal coverage`) %>%
   separate(`Temporal coverage`, c("start", "end"), "-") %>%
   mutate_at(vars("start", "end"), as.numeric) %>%

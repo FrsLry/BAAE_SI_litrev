@@ -184,7 +184,7 @@ tab_nopseudoreplicates <-
     !Reference == "La Sorte, 2006",
     !(Reference == "Jarzyna and Jetz, 2017" & (Metric == "sR" | Metric == "fDiv")),
     !(Reference == "La Sorte and Boecklen, 2005" & Metric == "sR"),
-    !(Reference == "Jarzyna and Jetz, 2018" & Metric == "sR" & `Spatial extent (Km²)` == "Local"),
+    !(Reference == "Jarzyna and Jetz, 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
     !(Reference == "Jarzyna and Jetz, 2018" & Metric == "sR" & `Spatial grain (Km²)` == "Regional"),
     !(Reference == "Jarzyna and Jetz, 2018" & Metric == "tBetaDiv" & `Spatial grain (Km²)` == "Local"),
     !(Reference == "Schipper et al., 2016" & Metric == "sR" & `Spatial grain (Km²)` == "Local"),
